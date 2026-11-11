@@ -13,12 +13,23 @@ body{background:#d9d9d9;margin:0;padding:12px 0;font-family:"Times New Roman",Ti
 .data td{padding:0;vertical-align:top;line-height:2.2}
 .data td:first-child{width:30%;padding-right:6px}
 .data td:last-child{white-space:nowrap}
+.p2{line-height:1.6}
+.bold{font-weight:bold}
+.ttd{display:flex;justify-content:space-between;gap:12px;margin-top:50px;font-size:clamp(12px,3.4vw,17px)}
+.ttd div{width:48%}
+.ttd .ruang{height:80px}
+.ttd .nama{font-weight:bold;text-decoration:underline}
 @media(min-width:600px){.data td:first-child{width:45%}}
 @media(max-width:600px){.page{padding:40px 16px}}
+@media print{
+body{background:#fff;padding:0}
+.page{margin:0;box-shadow:none;max-width:none;min-height:100vh;page-break-after:always}
+}
 </style>
 </head>
 <body>
 
+<!-- HALAMAN 1: SAMPUL -->
 <div class="page">
 <p>PRAKTIK KERJA LAPANGAN</p>
 <p>PERKEBUNAN KELAPA SAWIT</p>
@@ -38,6 +49,34 @@ body{background:#d9d9d9;margin:0;padding:12px 0;font-family:"Times New Roman",Ti
 <p>PERTANIAN NEGERI 2 TUGUMULYO</p>
 <p>PROVINSI SUMATERA SELATAN</p>
 <p>2026/2027</p>
+</div>
+
+<!-- HALAMAN 2: PENGESAHAN -->
+<div class="page p2">
+<p>HALAMAN PENGESAHAN</p>
+
+<p class="bold" style="margin-top:40px">PERKEBUNAN KELAPA SAWIT (Elaeis guineensis. Jacq)<br>DI PT. DENDY MARKER IDAH LESTARI JALAN : DESA BINGIN RUPIT, KECAMATAN MUARA RUPIT, KABUPATEN MUSI RAWAS UTARA (MURATARA) / MUSI RAWAS, SUMATERA SELATAN</p>
+
+<p style="margin-top:110px">Laporan Praktik Kerja Lapangan (PKL)</p>
+
+<p style="margin-top:30px;line-height:1.4">Disusun sebagai salah satu syarat mengikuti Ujian Akhir Semester Pada Sekolah Menengah Kejuruan (SMK) Pertanian Negeri 2 Tugumulyo Provinsi Sumatera Selatan Tahun Ajaran 2026/2027</p>
+
+<p class="bold" style="margin-top:60px">Menyetujui</p>
+
+<div class="ttd">
+<div>
+<p class="bold">Ketua Panitia Pelaksan</p>
+<div class="ruang"></div>
+<p class="nama">Selvi Anggraini, S.Pd</p>
+<p>NIP. 198604062011012017</p>
+</div>
+<div>
+<p class="bold">Pembimbing Interen</p>
+<div class="ruang"></div>
+<p class="nama">Rosmala Dewi.,S.H.,Gr</p>
+<p>NIP. 19720820 2022211004</p>
+</div>
+</div>
 </div>
 
 </body>
