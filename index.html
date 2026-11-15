@@ -35,6 +35,14 @@ sub,sup{line-height:0}
 .p4 td{padding:3px 10px 3px 0;vertical-align:top;line-height:1.6}
 .p4 .tb{margin-left:20px}
 .p4 .tb td{border:1px solid #000;padding:3px 10px}
+.p5{line-height:1.5}
+.p5 .judul{text-align:center;font-weight:bold;margin-bottom:24px}
+.toc{text-align:left}
+.toc a{display:flex;align-items:flex-end;color:#000;text-decoration:none;margin-bottom:5px}
+.toc .d{flex:1;border-bottom:1px dotted #000;margin:0 6px 6px}
+.toc .n{min-width:30px;text-align:right}
+.toc .b{font-weight:bold;margin-top:12px}
+.toc .s{padding-left:28px}
 @media(min-width:600px){.data td:first-child{width:45%}}
 @media(max-width:600px){.page{padding:40px 16px}}
 @media print{
@@ -44,6 +52,7 @@ body{background:#fff;padding:0}
 .p2{font-size:15px;padding:40px 50px}
 .p3{font-size:15px;padding:40px 50px}
 .p4{font-size:15px;padding:40px 50px}
+.p5{font-size:15px;padding:40px 50px}
 .p4 h2,.p4 h3{font-size:15px}
 }
 </style>
@@ -55,7 +64,7 @@ body{background:#fff;padding:0}
 <p>PRAKTIK KERJA LAPANGAN</p>
 <p>PERKEBUNAN KELAPA SAWIT</p>
 <p>(<i>Elaeis guineensis</i> Jacq.)</p>
-<p>DI PT DENDY MARKER INDAH LESTARI</p>
+<p>DI PT. DENDY MARKER INDAH LESTARI</p>
 
 <img class="logo" src="logo.png" alt="Logo Sumatera Selatan">
 
@@ -107,7 +116,7 @@ body{background:#fff;padding:0}
 
 <!-- HALAMAN 3: KATA PENGANTAR -->
 <div class="page p3">
-<p class="bold">KATA PENGANTAR</p>
+<p class="bold" id="kp">KATA PENGANTAR</p>
 
 <p class="rata" style="margin-top:20px">Puji syukur penulis panjatkan ke hadirat Allah Swt. yang telah melimpahkan serta memberikan rahmat dan karunia-Nya sehingga penulis dapat menyelesaikan pembuatan laporan Praktik Kerja Lapangan (PKL) Sekolah Menengah Kejuruan (SMK) Pertanian Negeri 2 Tugumulyo yang rangkaian kegiatannya telah dilaksanakan penulis.</p>
 
@@ -122,23 +131,49 @@ body{background:#fff;padding:0}
 
 <p class="rata">Tak ada yang luput dari kesalahan, yang artinya penulis dalam menyusun laporan PKL ini memiliki banyak kesalahan dan kekurangan. Maka dari itu, penulis mengharapkan kritik dan saran serta ulasan agar laporan ini dapat bermanfaat, terutama bagi siswa-siswi Sekolah Menengah Kejuruan (SMK) Pertanian Negeri 2 Tugumulyo.</p>
 
-<p class="kiri" style="margin-top:40px">Musirawas,</p>
+<p class="kiri" style="margin-top:40px">Musi Rawas,</p>
 <p class="kiri" style="margin-top:50px">Hormat saya</p>
 <p class="kiri">Penulis,</p>
+<p class="kiri bold" style="margin-top:70px">Fahry Adhwa Ramdhani</p>
+</div>
+
+<!-- HALAMAN: DAFTAR ISI -->
+<div class="page p5">
+<p class="judul" id="di">DAFTAR ISI</p>
+<div class="toc">
+<a href="#kp" class="b"><span class="t">KATA PENGANTAR</span><span class="d"></span><span class="n"></span></a>
+<a href="#di" class="b"><span class="t">DAFTAR ISI</span><span class="d"></span><span class="n"></span></a>
+<a href="#bab1" class="b"><span class="t">BAB I PENDAHULUAN</span><span class="d"></span><span class="n"></span></a>
+<a href="#s1-1" class="s"><span class="t">1.1 Latar Belakang</span><span class="d"></span><span class="n"></span></a>
+<a href="#s1-2" class="s"><span class="t">1.2 Tujuan PKL</span><span class="d"></span><span class="n"></span></a>
+<a href="#s1-3" class="s"><span class="t">1.3 Manfaat PKL</span><span class="d"></span><span class="n"></span></a>
+<a href="#s1-4" class="s"><span class="t">1.4 Waktu dan Tempat Pelaksanaan</span><span class="d"></span><span class="n"></span></a>
+<a href="#s1-5" class="s"><span class="t">1.5 Metode Pengumpulan Data</span><span class="d"></span><span class="n"></span></a>
+<a href="#bab2" class="b"><span class="t">BAB II GAMBARAN UMUM PERUSAHAAN</span><span class="d"></span><span class="n"></span></a>
+<a href="#s2-1" class="s"><span class="t">2.1 Sejarah Singkat Perusahaan</span><span class="d"></span><span class="n"></span></a>
+<a href="#s2-2" class="s"><span class="t">2.2 Lokasi Perusahaan</span><span class="d"></span><span class="n"></span></a>
+<a href="#bab3" class="b"><span class="t">BAB III KEGIATAN PKL</span><span class="d"></span><span class="n"></span></a>
+<a href="#s3-1" class="s"><span class="t">3.1 Pemotongan Pelepah (<i>Pruning</i>)</span><span class="d"></span><span class="n"></span></a>
+<a href="#s3-2" class="s"><span class="t">3.2 Pengendalian Gulma Merambat (<i>Creeper Weeding</i>)</span><span class="d"></span><span class="n"></span></a>
+<a href="#s3-3" class="s"><span class="t">3.3 Pemupukan</span><span class="d"></span><span class="n"></span></a>
+<a href="#s3-4" class="s"><span class="t">3.4 <i>Black Bunch Count</i> (BBC)</span><span class="d"></span><span class="n"></span></a>
+<a href="#s3-5" class="s"><span class="t">3.5 Panen (<i>Harvesting</i>)</span><span class="d"></span><span class="n"></span></a>
+<a href="#s3-6" class="s"><span class="t">3.6 Penanganan Hasil Panen dan <i>Grading</i> di TPH</span><span class="d"></span><span class="n"></span></a>
+</div>
 </div>
 
 <!-- HALAMAN 4: BAB I PENDAHULUAN -->
 <div class="page p4">
-<h2>BAB I</h2>
+<h2 id="bab1">BAB I</h2>
 <h2>PENDAHULUAN</h2>
 
-<h3>1.1 Latar Belakang</h3>
+<h3 id="s1-1">1.1 Latar Belakang</h3>
 <p>Kelapa sawit (<i>Elaeis guineensis</i> Jacq.) merupakan salah satu tanaman perkebunan penting di Indonesia. Tanaman ini menghasilkan minyak yang dimanfaatkan sebagai bahan baku berbagai kebutuhan, mulai dari minyak goreng hingga produk industri lainnya. Budidaya kelapa sawit juga membuka lapangan kerja dan sumber penghasilan bagi banyak orang di daerah perkebunan, termasuk di Provinsi Sumatera Selatan.</p>
 <p>Budidaya kelapa sawit membutuhkan pemeliharaan yang tepat dan berkelanjutan agar produksi tandan buah segar (TBS) tetap baik. Kegiatan seperti pemotongan pelepah, pemupukan, pengendalian gulma, dan panen harus dilakukan sesuai prosedur. Pengetahuan tentang kegiatan tersebut tidak cukup dipelajari di dalam kelas, sehingga siswa perlu melihat dan mengerjakannya langsung di kebun.</p>
 <p>Praktik Kerja Lapangan (PKL) merupakan bagian dari pembelajaran di Sekolah Menengah Kejuruan (SMK) yang mempertemukan siswa dengan dunia kerja yang sesungguhnya. Melalui PKL, siswa Program Keahlian Agribisnis Tanaman Perkebunan dapat menerapkan ilmu yang diperoleh di sekolah, mengenal disiplin dan budaya kerja, serta menambah keterampilan.</p>
 <p>Berdasarkan hal tersebut, penulis melaksanakan PKL di PT. Dendy Marker Indah Lestari yang berlokasi di Desa Bingin Rupit, Kecamatan Muara Rupit, Kabupaten Musi Rawas Utara, Sumatera Selatan. Laporan ini disusun untuk menyampaikan kegiatan dan hal-hal yang dipelajari penulis selama PKL, serta sebagai salah satu syarat mengikuti Ujian Akhir Semester.</p>
 
-<h3>1.2 Tujuan PKL</h3>
+<h3 id="s1-2">1.2 Tujuan PKL</h3>
 <ol>
 <li>Menerapkan pengetahuan dan keterampilan yang diperoleh di sekolah pada kegiatan perkebunan kelapa sawit yang sebenarnya.</li>
 <li>Mengetahui dan mempelajari kegiatan pemeliharaan tanaman kelapa sawit di PT. Dendy Marker Indah Lestari, seperti pemotongan pelepah.</li>
@@ -146,21 +181,21 @@ body{background:#fff;padding:0}
 <li>Menyusun laporan tertulis dari kegiatan yang dilaksanakan selama PKL.</li>
 </ol>
 
-<h3>1.3 Manfaat PKL</h3>
+<h3 id="s1-3">1.3 Manfaat PKL</h3>
 <ol>
 <li>Bagi penulis: menambah pengalaman, keterampilan, dan pemahaman tentang budidaya kelapa sawit secara langsung di kebun.</li>
 <li>Bagi sekolah: menjadi bahan evaluasi dan masukan untuk pembelajaran serta memperkuat hubungan dengan dunia usaha dan dunia industri.</li>
 <li>Bagi perusahaan: menjalin kerja sama yang baik dengan sekolah dan membantu siswa mengenal dunia kerja.</li>
 </ol>
 
-<h3>1.4 Waktu dan Tempat Pelaksanaan</h3>
+<h3 id="s1-4">1.4 Waktu dan Tempat Pelaksanaan</h3>
 <table>
 <tr><td>Waktu</td><td>: 6 Juli 2026 sampai 26 November 2026</td></tr>
 <tr><td>Tempat</td><td>: PT. Dendy Marker Indah Lestari (Sei Mandang Estate), Desa Bingin Rupit, Kecamatan Muara Rupit, Kabupaten Musi Rawas Utara, Sumatera Selatan</td></tr>
 <tr><td>Pembimbing lapangan</td><td>: Bapak Fahri Alwi (asisten perkebunan kelapa sawit)</td></tr>
 </table>
 
-<h3>1.5 Metode Pengumpulan Data</h3>
+<h3 id="s1-5">1.5 Metode Pengumpulan Data</h3>
 <p>Data dalam laporan ini diperoleh melalui:</p>
 <ol>
 <li>Observasi, yaitu mengamati kegiatan di kebun secara langsung.</li>
@@ -173,15 +208,15 @@ body{background:#fff;padding:0}
 
 <!-- HALAMAN 5: BAB II GAMBARAN UMUM PERUSAHAAN -->
 <div class="page p4">
-<h2>BAB II</h2>
+<h2 id="bab2">BAB II</h2>
 <h2>GAMBARAN UMUM PERUSAHAAN</h2>
 
-<h3>2.1 Sejarah Singkat Perusahaan</h3>
+<h3 id="s2-1">2.1 Sejarah Singkat Perusahaan</h3>
 <p>PT. Dendy Marker Indah Lestari, disingkat DMIL dan di beberapa dokumen ditulis Dendymarker Indah Lestari, adalah perusahaan yang bergerak di bidang perkebunan dan pengolahan kelapa sawit di wilayah Musi Rawas, Provinsi Sumatera Selatan. Perusahaan ini berdiri pada tahun 1996 dan saat ini merupakan anak perusahaan SIPEF Group, kelompok usaha agribisnis asal Belgia yang juga mengelola perkebunan di beberapa daerah lain di Indonesia.</p>
 <p>Pada tahun 2017, SIPEF membeli 95% saham PT. Dendy Marker Indah Lestari. SIPEF mengambil alih pengelolaan perusahaan mulai 1 Agustus 2017 dengan tujuan mengembangkan usahanya di wilayah Musi Rawas, termasuk kebun plasma yang dikelola petani seluas sekitar 2.780 hektare.</p>
-<p>Sejak pengambilalihan tersebut, kebun perusahaan terus dikembangkan dan diremajakan, serta pabrik kelapa sawit tetap dikelola. Perusahaan juga mengikuti sertifikasi RSPO (Roundtable on Sustainable Palm Oil), yaitu standar produksi minyak sawit berkelanjutan.</p>
+<p>Sejak pengambilalihan tersebut, kebun perusahaan terus dikembangkan dan diremajakan, serta pabrik kelapa sawit tetap dikelola. Perusahaan juga mengikuti sertifikasi RSPO (<i>Roundtable on Sustainable Palm Oil</i>), yaitu standar produksi minyak sawit berkelanjutan.</p>
 
-<h3>2.2 Lokasi Perusahaan</h3>
+<h3 id="s2-2">2.2 Lokasi Perusahaan</h3>
 <table>
 <tr><td>Nama perusahaan</td><td>: PT. Dendy Marker Indah Lestari (DMIL)</td></tr>
 <tr><td>Tahun berdiri</td><td>: 1996</td></tr>
@@ -195,34 +230,28 @@ body{background:#fff;padding:0}
 
 <!-- HALAMAN 6: BAB III KEGIATAN PKL -->
 <div class="page p4">
-<h2>BAB III</h2>
+<h2 id="bab3">BAB III</h2>
 <h2>KEGIATAN PKL</h2>
 
-<p>Selama melaksanakan PKL di Sei Mandang Estate, penulis ikut melakukan dan mempelajari beberapa kegiatan perkebunan kelapa sawit. Bab ini memuat enam kegiatan yang dipelajari, yaitu pemotongan pelepah (pruning), pengendalian gulma merambat (creeper weeding), pemupukan, sensus buah hitam (Black Bunch Count), panen, serta penanganan hasil panen dan grading di TPH.</p>
+<p>Selama melaksanakan PKL di Sei Mandang Estate, penulis ikut melakukan dan mempelajari beberapa kegiatan perkebunan kelapa sawit. Bab ini memuat enam kegiatan yang dipelajari, yaitu pemotongan pelepah (<i>pruning</i>), pengendalian gulma merambat (<i>creeper weeding</i>), pemupukan, sensus buah hitam (<i>Black Bunch Count</i>), panen, serta penanganan hasil panen dan <i>grading</i> di TPH.</p>
 
-<h3>3.1 Pemotongan Pelepah (Pruning)</h3>
+<h3 id="s3-1">3.1 Pemotongan Pelepah (<i>Pruning</i>)</h3>
 
-<p><b>a. Pengertian.</b> Pruning adalah kegiatan membuang dan memotong pelepah kelapa sawit yang sudah tua, kering, rusak, atau tidak produktif.</p>
+<p><b>a. Pengertian.</b> <i>Pruning</i> adalah kegiatan membuang dan memotong pelepah kelapa sawit yang sudah tua, kering, rusak, atau tidak produktif.</p>
 
-<p><b>b. Cara Pruning.</b> Pruning dilakukan dengan memotong 2 sampai 3 pelepah di bawah tandan buah yang telah dipanen.</p>
+<p><b>b. Cara <i>Pruning</i>.</b> <i>Pruning</i> dilakukan dengan memotong 2 sampai 3 pelepah di bawah tandan buah yang telah dipanen.</p>
 
-<p><b>c. Teknik Pemotongan.</b></p>
-<ol>
-<li>Prioritaskan memotong pelepah yang sudah kering, mati, atau terserang penyakit.</li>
-<li>Potong pelepah sedekat mungkin dengan batang pohon hingga membentuk huruf V terbalik.</li>
-</ol>
+<p><b>c. Frekuensi.</b> <i>Pruning</i> dikerjakan setiap 3 sampai 4 bulan sekali dan biasanya dilakukan bersamaan dengan kegiatan panen.</p>
 
-<p><b>d. Frekuensi.</b> Pruning dikerjakan setiap 3 sampai 4 bulan sekali, yang biasanya dilakukan bersamaan dengan kegiatan panen.</p>
-
-<p><b>e. Penyusunan Pelepah.</b></p>
+<p><b>d. Penyusunan Pelepah.</b></p>
 <ol>
 <li>Susunan pelepah harus berjarak minimal 1 hingga 1,5 meter dari pangkal batang.</li>
 <li>Pelepah dipotong menjadi 2 bagian agar tidak memakan banyak tempat.</li>
 </ol>
 
-<h3>3.2 Pengendalian Gulma Merambat (Creeper Weeding)</h3>
+<h3 id="s3-2">3.2 Pengendalian Gulma Merambat (<i>Creeper Weeding</i>)</h3>
 
-<p><b>a. Pengertian.</b> Creeper weeding adalah kegiatan membersihkan gulma tanaman merambat, menjalar, dan melilit pada batang utama tanaman kelapa sawit.</p>
+<p><b>a. Pengertian.</b> <i>Creeper weeding</i> adalah kegiatan membersihkan gulma tanaman merambat, menjalar, dan melilit pada batang utama tanaman kelapa sawit.</p>
 
 <p><b>b. Tujuan.</b></p>
 <ol>
@@ -231,48 +260,48 @@ body{background:#fff;padding:0}
 <li>Menjaga kebersihan tanaman kelapa sawit.</li>
 </ol>
 
-<p><b>c. Gulma Sasaran.</b> Gulma yang dibersihkan dalam creeper weeding, misalnya <i>Mucuna bracteata</i> yang melilit tanaman.</p>
+<p><b>c. Gulma Sasaran.</b> Gulma yang dibersihkan dalam <i>creeper weeding</i>, misalnya <i>Mucuna bracteata</i> yang melilit tanaman.</p>
 
-<h3>3.3 Pemupukan</h3>
+<h3 id="s3-3">3.3 Pemupukan</h3>
 
-<p><b>a. Pengertian.</b> Pemupukan adalah penambahan unsur hara kepada tanah atau tanaman. Pada nursery, tanah yang kurang subur atau unsur hara yang tercuci karena curah hujan tinggi dapat diperbaiki melalui pemupukan.</p>
+<p><b>a. Pengertian.</b> Pemupukan adalah penambahan unsur hara kepada tanah atau tanaman. Pada <i>nursery</i>, tanah yang kurang subur atau unsur hara yang tercuci karena curah hujan tinggi dapat diperbaiki melalui pemupukan.</p>
 
-<p><b>b. Jenis Pupuk.</b> Jenis pupuk yang digunakan antara lain MOP, dolomit, NPK 13, dan NPK 12. Analisa pupuk dilakukan untuk mengetahui kandungan nutrisi pada pupuk.</p>
+<p><b>b. Jenis Pupuk.</b> Jenis pupuk yang digunakan antara lain MOP, dolomit, NPK 13, dan NPK 12. Analisis pupuk dilakukan untuk mengetahui kandungan nutrisi pada pupuk.</p>
 <ol>
-<li>MOP (Muriate of Potash) mengandung K<sub>2</sub>O 60% dengan bentuk butiran (granular).</li>
-<li>NPK 12 mengandung N 12%, P<sub>2</sub>O<sub>5</sub> 12%, K<sub>2</sub>O 12%, dan MgO 2%. Bentuknya granular (butiran) bulat, berwarna cokelat, kuning, atau biru.</li>
+<li>MOP (<i>Muriate of Potash</i>) mengandung K<sub>2</sub>O 60% dengan bentuk butiran (<i>granular</i>).</li>
+<li>NPK 12 mengandung N 12%, P<sub>2</sub>O<sub>5</sub> 12%, K<sub>2</sub>O 12%, dan MgO 2%. Bentuknya <i>granular</i> (butiran) bulat, berwarna cokelat, kuning, atau biru.</li>
 </ol>
 
 <p><b>c. Perencanaan dan Permintaan Pupuk.</b></p>
 <ol>
 <li>Membuat rencana program pupuk dan melihat rekomendasi pupuk untuk menentukan pupuk yang digunakan di suatu blok.</li>
 <li>Rencana kerja pemupukan memuat blok, jumlah orang, luas (hektar), dan jumlah pupuk.</li>
-<li>Sebelum pemupukan, asisten atau mandor membuat SRN (Store Requisition Note).</li>
+<li>Sebelum pemupukan, asisten atau mandor membuat SRN (<i>Store Requisition Note</i>).</li>
 <li>SRN dicek dan ditandatangani oleh Askep, kemudian disetujui oleh Estate Manager.</li>
-<li>SRN diserahkan ke gudang pupuk, lalu petugas gudang menerbitkan SIN (Store Issue Note).</li>
+<li>SRN diserahkan ke gudang pupuk, lalu petugas gudang menerbitkan SIN (<i>Store Issue Note</i>).</li>
 <li>Setelah SIN terbit, pemupukan baru dapat dilaksanakan dan diminta kendaraan serta alat-alat seperti angkong.</li>
 </ol>
 
-<p><b>d. Transportasi Pupuk.</b> Untuk aplikasi, pupuk diangkut ke dalam kebun dengan prinsip FIFO (First In First Out). Pupuk diecer dalam beberapa tumpukan pada lokasi kerja.</p>
+<p><b>d. Transportasi Pupuk.</b> Untuk aplikasi, pupuk diangkut ke dalam kebun dengan prinsip FIFO (<i>First In First Out</i>). Pupuk diecer dalam beberapa tumpukan pada lokasi kerja.</p>
 
 <p><b>e. Aplikasi Pupuk.</b></p>
 <ol>
-<li>Taburkan pupuk yang telah dipacking secara merata. Tali diikat pada batang, lalu pupuk ditabur merata di seluruh tepi piringan (berbentuk U) sesuai jenis pupuk.</li>
-<li>Pupuk ditabur merata (broadcast) di dalam piringan tanaman. Tidak dibenarkan adanya penaburan pupuk yang menumpuk.</li>
+<li>Taburkan pupuk yang telah dikemas secara merata. Tali diikat pada batang, lalu pupuk ditabur merata di seluruh tepi piringan (berbentuk U) sesuai jenis pupuk.</li>
+<li>Pupuk ditabur merata (<i>broadcast</i>) di dalam piringan tanaman. Tidak dibenarkan adanya penaburan pupuk yang menumpuk.</li>
 <li>Ketika aplikasi pemupukan, pastikan kondisi piringan lebar dan bersih, dengan lebar piringan minimum 2 meter.</li>
-<li>Pada nursery, pastikan daun bibit tidak terkena pupuk.</li>
-<li>Pada tanah gambut (peat soil), pupuk makro ditabur merata di dalam piringan tanaman dengan jarak 50 cm dari pangkal batang hingga ujung piringan, sedangkan pupuk mikro ditabur merata di dalam piringan dengan jarak 50 sampai 100 cm dari pangkal batang.</li>
+<li>Pada <i>nursery</i>, pastikan daun bibit tidak terkena pupuk.</li>
+<li>Pada tanah gambut (<i>peat soil</i>), pupuk makro ditabur merata di dalam piringan tanaman dengan jarak 50 cm dari pangkal batang hingga ujung piringan, sedangkan pupuk mikro ditabur merata di dalam piringan dengan jarak 50 sampai 100 cm dari pangkal batang.</li>
 </ol>
 
 <p><b>f. Aplikasi Pupuk Secara Mekanis.</b></p>
 <ol>
-<li>Pupuk butiran diaplikasikan dengan spreader pada area datar dan bergelombang. Aplikasi secara mekanis juga dapat dilakukan di area gambut selama topografinya datar, dan spreader yang digunakan disesuaikan dengan kondisi area.</li>
+<li>Pupuk butiran diaplikasikan dengan <i>spreader</i> pada area datar dan bergelombang. Aplikasi secara mekanis juga dapat dilakukan di area gambut selama topografinya datar, dan <i>spreader</i> yang digunakan disesuaikan dengan kondisi area.</li>
 <li>Pupuk didistribusikan ke blok sesuai kebutuhan. Kebutuhan pupuk dihitung dengan rumus total palm × dosis. Pemakaian pupuk dihitung dari total pupuk dibagi total palm yang terpupuk.</li>
-<li>Hal-hal penting lainnya adalah jenis pupuk, dosis pupuk, RPM pada traktor, dan flow control pada gear.</li>
+<li>Hal-hal penting lainnya adalah jenis pupuk, dosis pupuk, RPM pada traktor, dan <i>flow control</i> pada <i>gear</i>.</li>
 <li>Dosis aplikasi pemupukan dilaksanakan sesuai dengan rekomendasi dari konsultan agronomi.</li>
 </ol>
 
-<p><b>g. Kondisi Cuaca.</b> Bila hujan gerimis berkepanjangan, pemupukan dihentikan sementara dan pupuk ditutup, kemudian pemupukan dilanjutkan bila cuaca cerah. Bila hujan deras, pupuk harus dibawa kembali ke gudang. Pemupukan tidak dapat dilakukan bersamaan dengan kegiatan lain seperti spraying dan panen.</p>
+<p><b>g. Kondisi Cuaca.</b> Bila hujan gerimis berkepanjangan, pemupukan dihentikan sementara dan pupuk ditutup, kemudian pemupukan dilanjutkan bila cuaca cerah. Bila hujan deras, pupuk harus dibawa kembali ke gudang. Pemupukan tidak dapat dilakukan bersamaan dengan kegiatan lain seperti <i>spraying</i> dan panen.</p>
 
 <p><b>h. Lingkungan.</b></p>
 <ol>
@@ -287,7 +316,7 @@ body{background:#fff;padding:0}
 <li>Gunakan masker untuk menghindari gangguan pernapasan pada saat aplikasi pupuk berbentuk debu atau butiran ringan.</li>
 <li>Cuci tangan dengan air bersih dan sabun (dibawa setiap hari) sebelum makan dan minum.</li>
 <li>Tenaga kerja diangkut terpisah dengan pengangkutan pupuk.</li>
-<li>APD yang digunakan: kacamata, masker, apron, sarung tangan, dan sepatu boot.</li>
+<li>APD yang digunakan: kacamata, masker, apron, sarung tangan, dan sepatu bot.</li>
 </ol>
 
 <p><b>j. Pelaksanaan.</b></p>
@@ -311,32 +340,32 @@ body{background:#fff;padding:0}
 </table>
 <p>Dengan dosis NPK 12 sebanyak 1,25 kg per pokok, kapasitas kerja per orang adalah 3 sampai 3,3 hektar.</p>
 
-<h3>3.4 Black Bunch Count (BBC)</h3>
+<h3 id="s3-4">3.4 <i>Black Bunch Count</i> (BBC)</h3>
 
-<p><b>a. Pengertian dan Tujuan.</b> Black Bunch Count (BBC) adalah sensus buah hitam, yaitu menghitung jumlah tandan hitam setiap bulan untuk mengestimasi produksi yang akan dicapai dalam 3 bulan ke depan. Tandan buah memerlukan waktu 6 bulan untuk menjadi buah siap panen. Tujuan BBC adalah menghitung potensi produksi dalam 3 bulan ke depan.</p>
+<p><b>a. Pengertian dan Tujuan.</b> <i>Black Bunch Count</i> (BBC) adalah sensus buah hitam, yaitu menghitung jumlah tandan hitam setiap bulan untuk mengestimasi produksi yang akan dicapai dalam 3 bulan ke depan. Tandan buah memerlukan waktu 6 bulan untuk menjadi buah siap panen. Tujuan BBC adalah menghitung potensi produksi dalam 3 bulan ke depan.</p>
 
 <p><b>b. Waktu dan Frekuensi.</b> BBC dilaksanakan setiap bulan, yaitu 12 kali dalam setahun. Sensus dilakukan pada akhir bulan, yaitu 10 hari terakhir bulan berjalan, setelah panen terakhir di blok tersebut.</p>
 
 <p><b>c. Alat dan Bahan.</b></p>
 <ol>
-<li>Alat: kuas, parang/pisau, sepatu safety, papan klip sebagai alas tulis, dan alat tulis.</li>
+<li>Alat: kuas, parang/pisau, sepatu <i>safety</i>, papan klip sebagai alas tulis, dan alat tulis.</li>
 <li>Bahan: cat minyak, formulir BBC, peta divisi, dan formulir laporan BBC.</li>
-<li>Dokumen: keterangan data area (area statement), peta divisi, dan program kerja.</li>
+<li>Dokumen: keterangan data area (<i>area statement</i>), peta divisi, dan program kerja.</li>
 </ol>
 
-<p><b>d. Persiapan Data Area Statement.</b> Sebelum melakukan BBC, diperlukan data jumlah tanaman dan jumlah tegakan per hektar (SPH), berat rata-rata per janjang (BJR), dan estimasi atau perkiraan produksi tahun berjalan.</p>
+<p><b>d. Persiapan Data <i>Area Statement</i>.</b> Sebelum melakukan BBC, diperlukan data jumlah tanaman dan jumlah tegakan per hektar (SPH), berat rata-rata per janjang (BJR), dan estimasi atau perkiraan produksi tahun berjalan.</p>
 
 <p><b>e. Penentuan Pokok Sampel.</b> Pokok sampel diambil pada setiap baris ke-5 dengan kelipatan 20 pokok. Pokok sampel harus mewakili seluruh kondisi topografi, yaitu datar, puncak, teras, dan rendahan. Semua palm sampel diberi cat merah melingkar pada batang. Demikian juga 1 palm di pinggir jalan.</p>
 
 <p><b>f. Pelaksanaan Sensus.</b></p>
 <ol>
-<li>Dilakukan pruning standar terlebih dahulu agar perhitungan janjang akurat, khususnya pada tanaman yang tinggi.</li>
+<li>Dilakukan <i>pruning</i> standar terlebih dahulu agar perhitungan janjang akurat, khususnya pada tanaman yang tinggi.</li>
 <li>Semua buah dihitung, termasuk buah hitam yang kecil yang dalam 3 bulan ke depan akan matang.</li>
 <li>Janjang yang dihitung hanya pada tanaman normal. Jika ada tanaman abnormal dan/atau sisipan dalam baris sensus, tanaman tersebut diberi tanda khusus pada formulir sensus.</li>
 <li>Verifikasi dapat dilakukan maksimal 7 hari setelah sensus atau sebelum blok tersebut dipanen.</li>
 </ol>
 
-<p><b>g. Perhitungan Potensi Produksi.</b> Sensus dilakukan setelah panen berakhir pada bulan tersebut. Potensi produksi dihitung dengan rumus:</p>
+<p><b>g. Perhitungan Potensi Produksi.</b> Potensi produksi dihitung dengan rumus:</p>
 <p style="text-indent:0;text-align:center">Produksi (ton) = (jumlah pokok × BJR (kg) × janjang/pokok) ÷ 1.000</p>
 
 <p><b>h. Validasi dan Akurasi.</b> Akurasi perhitungan BBC tidak kurang dari 95%, kecuali pada keadaan khusus tidak kurang dari 90%. Jika kesalahan melebihi 5% (atau 10% pada keadaan khusus), diperlukan perhitungan ulang.</p>
@@ -353,35 +382,35 @@ body{background:#fff;padding:0}
 <ol>
 <li>Pengambilan data terakhir di lapangan oleh estate: tanggal 1.</li>
 <li>Perhitungan data oleh estate: tanggal 2.</li>
-<li>Diterima RMO (Regional Management Office): tanggal 3.</li>
-<li>Diterima HO (Head Office): tanggal 5.</li>
+<li>Diterima RMO (<i>Regional Management Office</i>): tanggal 3.</li>
+<li>Diterima HO (<i>Head Office</i>): tanggal 5.</li>
 </ol>
 <p>Formulir yang digunakan (Rev 6): F-01 Formulir BBC, F-02 Laporan dan Detail per Blok dan Divisi, serta F-03 Laporan BBC Estate. Manager Estate (EM) bertanggung jawab untuk:</p>
 <ol>
 <li>Membuat rencana kerja bulanan dan tahunan.</li>
-<li>Mengevaluasi laporan bulanan BBC dari Field Head Assistant (FHA) dan Field Assistant (FA).</li>
+<li>Mengevaluasi laporan bulanan BBC dari <i>Field Head Assistant</i> (FHA) dan <i>Field Assistant</i> (FA).</li>
 <li>Bertanggung jawab penuh terhadap pelaksanaan prosedur BBC yang sesuai dan pelatihan tim sensus di lapangan.</li>
 <li>Verifikasi dan mengirim data BBC ke RMO.</li>
 </ol>
 
-<h3>3.5 Panen (Harvesting)</h3>
+<h3 id="s3-5">3.5 Panen (<i>Harvesting</i>)</h3>
 
 <p><b>a. Pengertian dan Tujuan.</b> Panen dalam perkebunan kelapa sawit adalah kegiatan memotong tandan buah segar (TBS) yang sudah matang dari pohon, mengutip brondolan (buah yang lepas), serta mengangkutnya ke tempat pengumpulan hasil (TPH) untuk dikirim ke pabrik dan diolah menjadi minyak sawit. Panen merupakan aktivitas terakhir dan penting pada perkebunan kelapa sawit. Tujuannya adalah memanen semua tandan buah segar, mengumpulkan semua brondolan, dan mempertahankan rotasi panen secara optimal.</p>
 
-<p><b>b. Ruang Lingkup.</b> Prosedur panen meliputi semua kegiatan panen hingga produksi dilansir ke tempat penumpukan hasil. Prosedur ini mencakup area young, prime, old mature, dan jalur listrik.</p>
+<p><b>b. Ruang Lingkup.</b> Prosedur panen meliputi semua kegiatan panen hingga produksi dilansir ke tempat penumpukan hasil. Prosedur ini mencakup area <i>young, prime, old mature</i>, dan jalur listrik.</p>
 
 <p><b>c. Alat, Bahan, dan Dokumen.</b></p>
 <ol>
-<li>Alat: alat panen sesuai spesifikasi dan alat pelindung diri (APD) sesuai prosedur Personal Protective Equipment.</li>
-<li>Bahan: blanko Daily Harvested Crop Production dan blanko Attendance Work Allocation.</li>
-<li>Dokumen: rotasi panen sebelumnya, Attendance Work Allocation, dan peta kebun yang menunjukkan adanya jalur PLN (jika ada).</li>
+<li>Alat: alat panen sesuai spesifikasi dan alat pelindung diri (APD) sesuai prosedur <i>Personal Protective Equipment</i>.</li>
+<li>Bahan: blanko <i>Daily Harvested Crop Production</i> dan blanko <i>Attendance Work Allocation</i>.</li>
+<li>Dokumen: rotasi panen sebelumnya, <i>Attendance Work Allocation</i>, dan peta kebun yang menunjukkan adanya jalur PLN (jika ada).</li>
 </ol>
 
 <p><b>d. Syarat Pelaksanaan.</b> Agar panen menghasilkan produksi tinggi dengan kualitas terbaik, pelaksanaannya harus memenuhi hal berikut:</p>
 <ol>
 <li>Keahlian: pemanen harus mampu mengegrek buah dengan ketinggian hingga 15 meter.</li>
 <li>Disiplin: hanya buah masak yang dipanen, sehingga kandungan OER tinggi dan FFA rendah.</li>
-<li>Waktu: pemanen harus kembali ke ancak yang sama setiap 7 sampai 10 hari. Jika terlambat, tandan buah mudah menjadi overripe bahkan busuk.</li>
+<li>Waktu: pemanen harus kembali ke ancak yang sama setiap 7 sampai 10 hari. Jika terlambat, tandan buah mudah menjadi <i>overripe</i> bahkan busuk.</li>
 </ol>
 
 <p><b>e. Jam Kerja dan Apel Pagi.</b></p>
@@ -392,7 +421,7 @@ body{background:#fff;padding:0}
 <tr><td>13.00 - 15.00</td><td>: kerja kembali</td></tr>
 <tr><td>15.00</td><td>: pulang</td></tr>
 </table>
-<p>Kegiatan diawali dengan apel pagi, yaitu pengarahan, evaluasi kerja, dan berdoa bersama, yang terdiri dari asisten, mandor, pembantu mandor, dan pemimpin apel (satpam). Pada apel pagi dilakukan pembagian ancak dan pengawasan.</p>
+<p>Kegiatan diawali dengan apel pagi berupa pengarahan, evaluasi kerja, dan berdoa bersama. Apel terdiri dari asisten, mandor, pembantu mandor, dan pemimpin apel (satpam). Pada apel pagi dilakukan pembagian ancak dan pengawasan.</p>
 
 <p><b>f. Basis Borong.</b> Di Divisi 6 terdapat 4 tahun tanam, yaitu 2019, 2020, 2021, dan 2024. Basis borong pemanen menurut tahun tanam:</p>
 <table class="tb">
@@ -410,7 +439,7 @@ body{background:#fff;padding:0}
 <ol>
 <li>Mengasah alat panen (dodos).</li>
 <li>Melihat di piringan, jika sudah ada 5 brondolan baru dipanen.</li>
-<li>Sesudah panen dilakukan pruning.</li>
+<li>Sesudah panen dilakukan <i>pruning</i>.</li>
 <li>Pelepah disusun.</li>
 <li>Tangkai buah dipotong membentuk huruf V.</li>
 </ol>
@@ -424,7 +453,7 @@ body{background:#fff;padding:0}
 </ol>
 <p>Pengaturan rotasi panen:</p>
 <ol>
-<li>Jika rotasi terlalu pendek, pemanen dapat membantu divisi lain yang rotasi panennya panjang atau melakukan pruning.</li>
+<li>Jika rotasi terlalu pendek, pemanen dapat membantu divisi lain yang rotasi panennya panjang atau melakukan <i>pruning</i>.</li>
 <li>Jika rotasi terlalu panjang, FA dapat mengajukan permohonan bekerja pada hari Minggu, bantuan dari divisi lain, atau penambahan tenaga kerja.</li>
 <li>Jika staf mampu memprediksi kapan rotasi berlangsung, misalnya sebelum hari raya Idul Fitri, staf dapat mengatur untuk menurunkan rotasi panen menjadi 5 hari sebelumnya dengan menerapkan metode yang telah disebutkan.</li>
 <li>Cara lain adalah mengubah standar panen menjadi 1 sampai 2 brondolan di dalam piringan, dengan harapan setelah lebaran pekerja dapat bekerja lebih cepat serta mengurangi rotasi panen.</li>
@@ -437,7 +466,7 @@ body{background:#fff;padding:0}
 <li>Matang optimal: warna buah jingga kemerahan.</li>
 <li>Terlalu matang atau busuk: buah berwarna sangat gelap.</li>
 </ol>
-<p>Berdasarkan brondolan yang jatuh, mutu buah dibagi menjadi normal, mentah (tidak ada brondolan), mengkal (brondolan kurang dari 5), dan overripe (brondolan lebih dari 50%).</p>
+<p>Berdasarkan brondolan yang jatuh, mutu buah dibagi menjadi normal, mentah (tidak ada brondolan), mengkal (brondolan kurang dari 5), dan <i>overripe</i> (brondolan lebih dari 50%).</p>
 <p>Catatan mutu panen:</p>
 <ol>
 <li>Buah kurang masak atau mengkal: pemanen yang memanen buah mengkal akan menurunkan rendemen.</li>
@@ -460,7 +489,7 @@ body{background:#fff;padding:0}
 <p><b>m. Penanganan Pelepah.</b> Selain mengikuti Sapta Panen, penanganan pelepah memperhatikan hal berikut:</p>
 <ol>
 <li>Potongan pangkal pelepah yang berdiri diletakkan ke arah dalam (jangan mengarah ke pasar pikul) supaya tidak melukai kaki pekerja.</li>
-<li>Pelepah dan sampah bekas pruning tidak boleh menutupi parit dan DAS.</li>
+<li>Pelepah dan sampah bekas <i>pruning</i> tidak boleh menutupi parit dan DAS.</li>
 </ol>
 
 <p><b>n. Pengumpulan Brondolan.</b></p>
@@ -468,14 +497,14 @@ body{background:#fff;padding:0}
 <li>Brondolan memiliki rendemen yang tinggi (40% - 50%), sehingga semua brondolan harus dikumpulkan, termasuk yang tersangkut di batang.</li>
 <li>Brondolan diletakkan di dalam atau di atas karung bekas pupuk dan bebas kontaminasi atau sampah.</li>
 <li>Pada estate yang memiliki pembrondol, seorang pembrondol mengikuti seorang pemanen dan mengumpulkan semua brondolan dari buah yang telah dipanen. Pada estate tanpa pembrondol, pemanen mengumpulkan brondolan dan buah secara bersamaan, kemudian membawanya ke TPH.</li>
-<li>Buah overripe diambil brondolnya saja menggunakan ganco, dan janjangan kosongnya tidak perlu diikutsertakan. Tidak dibenarkan ada buah busuk di pohon.</li>
+<li>Buah <i>overripe</i> diambil brondolnya saja menggunakan ganco, dan janjangan kosongnya tidak perlu diikutsertakan. Tidak dibenarkan ada buah busuk di pohon.</li>
 </ol>
 
-<p><b>o. Penyusunan Buah di TPH.</b> Janjang buah dikumpulkan dan ditempatkan pada TPH di tepi collection road. Janjang disusun 5 atau 10 per baris agar mudah dihitung. TBS (FFB) di setiap TPH disusun dengan posisi gagang buah mengarah ke bawah, kecuali 2 janjang yang mengarah ke atas untuk penulisan identitas pemanen dan jumlah janjang. Cara ini juga memudahkan pemeriksaan mutu TBS.</p>
+<p><b>o. Penyusunan Buah di TPH.</b> Janjang buah dikumpulkan dan ditempatkan pada TPH di tepi <i>collection road</i>. Janjang disusun 5 atau 10 per baris agar mudah dihitung. TBS (FFB) di setiap TPH disusun dengan posisi gagang buah mengarah ke bawah, kecuali 2 janjang yang mengarah ke atas untuk penulisan identitas pemanen dan jumlah janjang. Cara ini juga memudahkan pemeriksaan mutu TBS.</p>
 
 <p><b>p. Panen di Jalur Listrik (PLN).</b></p>
 <ol>
-<li>Pelepah pohon sawit yang diizinkan pada area jalur listrik berjarak ujung daun pelepah 3 meter ke kabel tiang listrik. Jika letak pohon dinilai membahayakan walaupun lebih dari 3 meter, pohon boleh tidak dipanen dan diajukan penebangan ke EM atau FHA.</li>
+<li>Pelepah pohon sawit pada area jalur listrik diizinkan jika jarak antara ujung daun pelepah dan kabel tiang listrik 3 meter. Jika letak pohon dinilai membahayakan walaupun lebih dari 3 meter, pohon boleh tidak dipanen dan diajukan penebangan ke EM atau FHA.</li>
 <li>Jangan memanen di jalur PLN saat hujan. Pekerjaan panen harus dihentikan pada saat hujan mulai turun.</li>
 <li>Alat panen (khusus egrek) harus diberi sarung pada egrek, dan gagang egrek dibuat sependek mungkin.</li>
 <li>Lokasi pekerjaan di jalur tersebut adalah pohon pertama sampai ketiga di bagian kiri dan kanan jalur distribusi listrik tegangan tinggi, yang diberi tanda khusus berupa cat kuning dengan tinggi 125 cm dari permukaan tanah dan lebar 5 cm. Baris selanjutnya setelah baris ke-3 dipanen secara normal.</li>
@@ -488,14 +517,14 @@ body{background:#fff;padding:0}
 <p><b>s. Rekaman.</b> Rekaman yang dibuat dalam kegiatan panen:</p>
 <ol>
 <li>Rotasi panen.</li>
-<li>Attendance Work Allocation.</li>
-<li>Daily Harvested Crop.</li>
-<li>Budget vs Realization of Crop Production.</li>
+<li><i>Attendance Work Allocation</i>.</li>
+<li><i>Daily Harvested Crop</i>.</li>
+<li><i>Budget vs Realization of Crop Production</i>.</li>
 </ol>
 
-<h3>3.6 Penanganan Hasil Panen dan Grading di TPH</h3>
+<h3 id="s3-6">3.6 Penanganan Hasil Panen dan <i>Grading</i> di TPH</h3>
 
-<p><b>a. Faktor yang Memengaruhi Kualitas.</b> Kualitas Fresh Fruit Bunch (FFB) atau TBS dan Loose Fruit (LF) atau brondolan dipengaruhi oleh:</p>
+<p><b>a. Faktor yang Memengaruhi Kualitas.</b> Kualitas <i>Fresh Fruit Bunch</i> (FFB) atau TBS dan <i>Loose Fruit</i> (LF) atau brondolan dipengaruhi oleh:</p>
 <ol>
 <li>Tingkat kematangan buah pada saat panen.</li>
 <li>Seberapa hati-hati dan berapa kali tandan ditangani sebelum dikirim ke pabrik.</li>
@@ -504,7 +533,7 @@ body{background:#fff;padding:0}
 
 <p><b>b. Tujuan.</b></p>
 <ol>
-<li>Memastikan kualitas TBS yang dikirim ke pabrik memenuhi atau melampaui kriteria grading TBS.</li>
+<li>Memastikan kualitas TBS yang dikirim ke pabrik memenuhi atau melampaui kriteria <i>grading</i> TBS.</li>
 <li>Meminimalkan kerusakan atau memar pada TBS dan LF sebelum sterilisasi.</li>
 </ol>
 
@@ -513,18 +542,18 @@ body{background:#fff;padding:0}
 <p><b>d. Sumber Daya.</b></p>
 <ol>
 <li>Alat dan bahan: ganco, pisau, tojok, dan karung bersih.</li>
-<li>Alat angkut: traktor dengan trailer (atau traktor saja) dan buffalo.</li>
-<li>APD menurut analisis risiko: sarung tangan dan sepatu boots.</li>
+<li>Alat angkut: traktor dengan <i>trailer</i> (atau traktor saja) dan <i>buffalo</i>.</li>
+<li>APD menurut analisis risiko: sarung tangan dan sepatu bot.</li>
 </ol>
 
-<p><b>e. Prosedur Grading di TPH.</b></p>
+<p><b>e. Prosedur <i>Grading</i> di TPH.</b></p>
 <ol>
-<li>Grading di TPH dilaksanakan oleh kerani panen dengan mengacu pada kriteria grading FFB (referensi: SOP Lab Independen – FFB Grading).</li>
+<li><i>Grading</i> di TPH dilaksanakan oleh kerani panen dengan mengacu pada kriteria <i>grading</i> FFB (referensi: SOP Lab Independen – FFB <i>Grading</i>).</li>
 <li>Hindari banyak memar pada TBS dan LF untuk mencegah peningkatan kadar FFA yang tidak perlu.</li>
 <li>Tangkai harus dipotong dengan panjang yang sesuai setelah pemanenan dan sebelum pemuatan, untuk mencegah penurunan tingkat ekstraksi minyak di pabrik. Tangkai yang panjang akan menyerap minyak sawit saat di pabrik.</li>
 <li>Brondolan tidak boleh tercampur dengan pasir atau sampah karena dapat merusak mesin-mesin di pabrik minyak.</li>
 </ol>
-<p>Kategori buah yang dinilai antara lain unripe (mentah), underripe (mengkal), normal, overripe, dan long stalk (tangkai panjang).</p>
+<p>Kategori buah yang dinilai antara lain <i>unripe</i> (mentah), <i>underripe</i> (mengkal), normal, <i>overripe</i>, dan <i>long stalk</i> (tangkai panjang).</p>
 </div>
 
 </body>
