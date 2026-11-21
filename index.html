@@ -1,4 +1,4 @@
-   <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -59,11 +59,62 @@ body{background:#fff;padding:0}
 .p4 h2,.p4 h3{font-size:15px}
 }
 </style>
-</head>
+<style>
+@media print{
+html,body{background:#fff!important}
+body{margin:0!important;padding:0!important}
+.page{margin:0!important;padding:0!important;box-shadow:none!important;max-width:none!important;min-height:0!important;page-break-after:always;break-after:page}
+.page:last-child{page-break-after:auto;break-after:auto}
+p,li{orphans:2;widows:2}
+h2,h3{break-after:avoid;page-break-after:avoid}
+table,figure,li{break-inside:avoid;page-break-inside:avoid}
+.sampul{display:flex;flex-direction:column;justify-content:center;min-height:235mm;font-size:17px!important;line-height:1.6!important}
+.sampul .logo{margin:30px auto!important}
+.sampul table.data td{line-height:1.9!important}
+.p2,.p3,.p4,.p5{font-size:16px!important;line-height:1.5!important}
+.p2 .ttd{font-size:16px!important;margin-top:26px!important}
+.p2 .ruang{height:64px!important}
+.p5 .judul{margin-bottom:22px!important}
+.toc a{margin-bottom:6px!important}
+.toc .b{margin-top:14px!important}
+.p4 h2{font-size:17px!important;line-height:1.35!important;margin:0 0 2px!important}
+.p4 h3{font-size:16px!important;line-height:1.35!important;margin:18px 0 6px!important}
+.p4 p{margin-bottom:8px}
+.p4 ol,.p4 ul{margin:5px 0 7px;padding-left:40px}
+.p4 li{margin-bottom:4px;line-height:1.5}
+.p4 table{margin:6px 0 8px 20px}
+.p4 td{padding:2px 10px 2px 0;line-height:1.5}
+.p4 .tb td{padding:4px 10px}
+.p4 figure{margin:12px 0!important}
+.p4 figure img{max-width:100%!important;max-height:360px!important;width:auto!important;height:auto!important}
+.p4 figcaption{font-size:15px!important;line-height:1.4!important;margin-top:4px!important}
+}
+
+@media print{
+.lanjut{page-break-after:auto!important;break-after:auto!important}
+.p4 h2#bab4{margin-top:30px!important}
+}
+
+@media print{
+.p4 p:has(+ ol),.p4 p:has(+ ul),.p4 p:has(+ table){break-after:avoid!important;page-break-after:avoid!important}
+.p4 li:first-child{break-after:avoid!important;page-break-after:avoid!important}
+.p4 li:nth-last-child(2){break-after:avoid!important;page-break-after:avoid!important}
+}
+
+@media print{
+.p4 figure img{max-height:340px!important}
+.p4{line-height:1.5!important}
+.p4 p{margin-bottom:8px}
+.p4 li{margin-bottom:4px}
+.p4 h3{margin-top:18px!important}
+.p4 figure img[src="brondol-1.jpg"]{max-height:260px!important}
+.p4 figure img[src="foto-3.jpg"]{max-height:280px!important}
+}
+@page{size:A4;margin:2.5cm 3cm 2.5cm 4cm}</style></head>
 <body>
 
 <!-- HALAMAN 1: SAMPUL -->
-<div class="page">
+<div class="page sampul">
 <p>PRAKTIK KERJA LAPANGAN</p>
 <p>PERKEBUNAN KELAPA SAWIT</p>
 <p>(<i>Elaeis guineensis</i> Jacq.)</p>
@@ -165,6 +216,7 @@ body{background:#fff;padding:0}
 <a href="#s3-7" class="s"><span class="t">3.7 <i>Black Bunch Count</i> (BBC)</span><span class="d"></span><span class="n"></span></a>
 <a href="#bab4" class="b"><span class="t">BAB IV PENUTUP</span><span class="d"></span><span class="n"></span></a>
 <a href="#s4-1" class="s"><span class="t">4.1 Kesimpulan</span><span class="d"></span><span class="n"></span></a>
+<a href="#s4-2" class="s"><span class="t">4.2 Kata Penutup</span><span class="d"></span><span class="n"></span></a>
 </div>
 </div>
 
@@ -235,7 +287,7 @@ body{background:#fff;padding:0}
 </div>
 
 <!-- HALAMAN 6: BAB III KEGIATAN PKL -->
-<div class="page p4">
+<div class="page p4 lanjut">
 <h2 id="bab3">BAB III</h2>
 <h2>KEGIATAN PKL</h2>
 
@@ -430,7 +482,7 @@ body{background:#fff;padding:0}
 <li><b>Ganco.</b> Alat berkait untuk menarik pelepah, mengutip brondolan, dan mengambil brondolan dari buah <i>overripe</i>.</li>
 <li><b>Angkong.</b> Gerobak dorong beroda satu yang digunakan untuk mengangkut buah dari ancak panen ke TPH.</li>
 <li><b>Karung.</b> Wadah brondolan yang harus bersih dari pasir dan sampah agar tidak merusak mesin di pabrik.</li>
-<li><b>Tali putih dan cat.</b> Digunakan untuk menandai pohon yang sudah dipanen dan pohon yang belum dipanen dalam satu ancak.</li>
+<li><b>Cat.</b> Digunakan untuk menandai pohon yang sudah dipanen dan pohon yang belum dipanen dalam satu ancak.</li>
 </ol>
 
 <p>Setiap alat wajib diperiksa sebelum digunakan. Mata pisau harus tajam, gagang tidak retak, dan sarung pengaman terpasang dengan baik.</p>
@@ -631,7 +683,10 @@ body{background:#fff;padding:0}
 <p>Kegiatan pemupukan dan BBC menunjukkan bahwa perencanaan, pencatatan data, dan prosedur kerja yang tertib sangat diperlukan agar produksi dapat diperkirakan dan dikelola dengan baik. Keselamatan dan kesehatan kerja juga harus selalu diutamakan, terutama saat bekerja di ketinggian, di sekitar jalur listrik, dan saat menggunakan alat panen.</p>
 <p>Melalui PKL ini, penulis memperoleh pemahaman yang lebih baik tentang dunia kerja di perkebunan, serta melatih disiplin, tanggung jawab, dan kerja sama sesuai dengan tujuan PKL yang telah ditetapkan.</p>
 
+<h3 id="s4-2">4.2 Kata Penutup</h3>
+<p>Demikian laporan Praktik Kerja Lapangan (PKL) ini penulis susun sebagai bentuk pertanggungjawaban atas kegiatan yang telah dilaksanakan di PT. Dendy Marker Indah Lestari. Penulis menyadari masih banyak kekurangan dalam laporan ini, sehingga kritik dan saran yang membangun sangat diharapkan. Akhir kata, penulis mengucapkan terima kasih kepada pihak perusahaan dan para pembimbing yang telah membantu selama pelaksanaan PKL.</p>
 </div>
+
 
 </body>
 </html>
